@@ -1,4 +1,4 @@
-# Chat-Appication-using-C-
+# Chat-Appication-using-Cpp-
 A console based chat application using C++.
 
 Steps to execute.
