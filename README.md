@@ -1,7 +1,7 @@
 # Chat-Appication-using-Cpp-
 A console based chat application using C++.
 
-Features:
+**Features:**
  * Sign up
  * Sign in
  *	Inbox
@@ -12,7 +12,7 @@ Features:
  *	Group Message
  
 
-Steps to execute.
+**Steps to execute.**
   * Compile the file on any GNU g++ compiler.
   * Register on the application following instructions displayed on console.
   * Login and Enjoy!
