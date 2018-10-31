@@ -47,7 +47,7 @@ void frnd::chat_on(string uname,string reciepient,char *message)
         }
         if(!flag)
         {
-            cout<<"\nSorry!! No such user exist\a\a\n";
+            cout<<"\nSorry!! No user found\a\a\n";
             page2(uname);
         }
 
@@ -73,7 +73,7 @@ sms[reciepient].num_of_message++;
 void frnd::inbox(string uname)
 {
     cout<<"\nWelcome "<<uname<<" to your Inbox\n\n";
-    cout<<"Messages in your Inbox:\n\n";
+    cout<<"All Messages in your Inbox:\n\n";
     for(int i=0;i<=sms[uname].num_of_message;i++)
     {
         puts(sms[uname].mess[i]);
@@ -87,10 +87,11 @@ void frnd::addfrnd(string uname)
     map<string,string>::iterator iuser;
    int uflag=0,flag=0,flag3=0;
  string addname;
- cout<<"\nenter the name which you want to add in your friend list"<<endl;
+ cout<<"\nEnter the name which you want to add in your friend list"<<endl;
  cin>>addname;
  cout<<"\nPlease wait! checking for  "<<addname<<"......\n";
-for(int i=0;i<99999999;)
+ // waiting time for new mwssage
+for(int i=0;i<99999910;)
 {
 i++;
 }
@@ -114,6 +115,7 @@ i++;
              flag++;
 
 }
+//error for trying to add yourself as your friend
 if(uflag==1 && flag==0 && flag3==0)
     cout<<"\nSorry! Can't add yourself to your friend list\n";
 if(flag==1 && uflag==0 && flag3==0)
